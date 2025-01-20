@@ -6,7 +6,7 @@
   <title>Sobre Iury</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="style.css">
   <style>
     /* Efeito de texto digitando */
     .typewriter {
@@ -14,7 +14,7 @@
       font-family: 'Outfit', sans-serif;
       font-size: 2rem;
       font-weight: 600;
-      color: #fbbf24; /* Cor amarela */
+      color: #fbbf24; 
       white-space: nowrap;
       overflow: hidden;
       border-right: 3px solid;
@@ -33,7 +33,6 @@
       animation: typing 6s steps(60) 1s forwards, blink 0.75s step-end infinite;
     }
 
-    /* Efeito de digitação */
     @keyframes typing {
       from {
         width: 0;
@@ -43,21 +42,24 @@
       }
     }
 
-    /* Efeito de piscada do cursor */
     @keyframes blink {
       50% {
         border-color: transparent;
       }
     }
   </style>
-  <header class="text-white py-6">
-  <div class="container mx-auto text-center">
-    <h1 class="typewriter">Sobre Iury Gabriel</h1>
-    <p class="mt-2 typewriter-description text-base sm:text-lg md:text-xl">
-      Informações pessoais, <br> sonhos e clubes pelos quais passei.
-    </p>
-  </div>
-</header>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Cabeçalho -->
+  <header class="py-6">
+    <div class="container mx-auto text-center">
+      <h1 class="typewriter">Sobre Iury Gabriel</h1>
+      <p class="mt-2 typewriter-description text-base sm:text-lg md:text-xl">
+        Informações pessoais, <br> sonhos e clubes pelos quais passei.
+      </p>
+    </div>
+  </header>
 
   <!-- Conteúdo Principal -->
   <main class="container mx-auto p-6">
@@ -65,15 +67,15 @@
     <!-- Informações Pessoais -->
     <section class="mb-8">
       <h2 class="text-3xl font-semibold text-yellow-500 mb-4">Informações Pessoais</h2>
-      <div class="flex items-center bg-gray-800 p-6 rounded-lg shadow-lg">
-        <div class="flex-shrink-0">
-          <img class="rounded-full w-40 h-40 object-cover border-4 border-yellow-500" src="img/iuryg.jpg" alt="Iury Gabriel">
+      <div class="flex flex-wrap items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div class="flex-shrink-0 w-full sm:w-auto">
+          <img class="rounded-full w-full sm:w-40 h-40 object-cover border-4 border-yellow-500 mx-auto sm:mx-0" src="img/iuryg.jpg" alt="Iury Gabriel">
         </div>
-        <div class="ml-6">
+        <div class="mt-4 sm:mt-0 sm:ml-6 text-center sm:text-left">
           <p><strong>Nome:</strong> Iury Gabriel</p>
-          <p><strong>Idade:</strong> 15 anos (2010)</p>
+          <p><strong>Idade:</strong> 14 anos (2010)</p>
           <p><strong>Cidade natal:</strong> Bom Conselho - PE</p>
-          <p><strong>Estatura:</strong> 179cm e 73kg</p>
+          <p><strong>Estatura:</strong> 180cm e 71kg</p>
         </div>
       </div>
     </section>
@@ -81,11 +83,11 @@
     <!-- Sonhos -->
     <section class="mb-8">
       <h2 class="text-3xl font-semibold text-yellow-500 mb-4">Meus Sonhos</h2>
-      <div class="flex items-center bg-gray-800 p-6 rounded-lg shadow-lg">
-        <div class="flex-shrink-0">
-          <img class="rounded-full w-40 h-40 object-cover border-4 border-yellow-500" src="img/sonhos.jpg" alt="Iury Gabriel">
+      <div class="flex flex-wrap items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div class="flex-shrink-0 w-full sm:w-auto">
+          <img class="rounded-full w-full sm:w-40 h-40 object-cover border-4 border-yellow-500 mx-auto sm:mx-0" src="img/sonhos.jpg" alt="Iury Gabriel">
         </div>
-        <div class="ml-6 w-2/3">
+        <div class="mt-4 sm:mt-0 sm:ml-6 text-center sm:text-left w-full sm:w-2/3">
           <ul class="list-disc ml-6 text-white">
             <li>Defender a Seleção Brasileira</li>
             <li>Ser um ícone do esporte e inspirar jovens</li>
@@ -98,11 +100,11 @@
     <!-- Clubes -->
     <section class="mb-8">
       <h2 class="text-3xl font-semibold text-yellow-500 mb-4">Clubes pelos quais passei</h2>
-      <div class="flex items-center bg-gray-800 p-6 rounded-lg shadow-lg">
-        <div class="flex-shrink-0">
-          <img class="rounded-full w-40 h-40 object-cover border-4 border-yellow-500" src="img/clubes.jpg" alt="Iury Gabriel">
+      <div class="flex flex-wrap items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div class="flex-shrink-0 w-full sm:w-auto">
+          <img class="rounded-full w-full sm:w-40 h-40 object-cover border-4 border-yellow-500 mx-auto sm:mx-0" src="img/clubes.jpg" alt="Iury Gabriel">
         </div>
-        <div class="ml-6 w-2/3">
+        <div class="mt-4 sm:mt-0 sm:ml-6 text-center sm:text-left w-full sm:w-2/3">
           <ul class="list-disc ml-6 text-white">
             <li>Flamengo de Arcoverde - PE</li>
             <li>Belo Jardim FC - PE</li>
@@ -115,12 +117,14 @@
     <!-- Outras Informações -->
     <section class="mb-8">
       <h2 class="text-3xl font-semibold text-yellow-500 mb-4">Outras Informações</h2>
-      <div class="flex items-center bg-gray-800 p-6 rounded-lg shadow-lg">
-        <div class="flex-shrink-0">
-          <img class="rounded-full w-40 h-40 object-cover border-4 border-yellow-500" src="img/outras.jpg" alt="Iury Gabriel">
+      <div class="flex flex-wrap items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div class="flex-shrink-0 w-full sm:w-auto">
+          <img class="rounded-full w-full sm:w-40 h-40 object-cover border-4 border-yellow-500 mx-auto sm:mx-0" src="img/outras.jpg" alt="Iury Gabriel">
         </div>
-        <div class="ml-6 w-2/3">
-          <p class="text-white">Sempre fui apaixonado pelo futebol desde pequeno, me dedicando para alcançar grandes conquistas. Com um espírito competitivo, sempre busquei superar meus limites, enfrentando desafios com determinação e foco. O futebol é mais do que um esporte para mim, é um estilo de vida.</p>
+        <div class="mt-4 sm:mt-0 sm:ml-6 text-center sm:text-left w-full sm:w-2/3">
+          <p class="text-white">
+            Sempre fui apaixonado pelo futebol desde pequeno, me dedicando para alcançar grandes conquistas. Com um espírito competitivo, sempre busquei superar meus limites, enfrentando desafios com determinação e foco. O futebol é mais do que um esporte para mim, é um estilo de vida.
+          </p>
         </div>
       </div>
     </section>

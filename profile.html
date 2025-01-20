@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Iury</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo -->
+  <style>
+    /* Efeito de texto digitando */
+    .typewriter {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #fbbf24; /* Cor amarela */
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      width: 0;
+      animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+    }
+
+    .typewriter-description {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #fbbf24;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 6s steps(60) 1s forwards, blink 0.75s step-end infinite;
+    }
+
+    /* Efeito de digitação */
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    /* Efeito de piscada do cursor */
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-outfit">
+  <!-- Cabeçalho -->
+  <header class="text-white py-6">
+    <div class="container mx-auto text-center">
+      <h1 class="typewriter">Sobre Iury Gabriel</h1>
+      <p class="mt-2 typewriter-description">Informações pessoais, sonhos e clubes pelos quais passei.</p>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container mx-auto p-6">
+    
+    <!-- Informações Pessoais -->
+    <section class="mb-8">
+      <h2>Informações Pessoais</h2>
+      <div class="flex items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div class="flex-shrink-0">
+          <img class="rounded-full w-40 h-40 object-cover border-4 border-yellow-500" src="img/iuryg.jpg" alt="Iury Gabriel">
+        </div>
+        <div class="ml-6">
+          <p><strong>Nome:</strong> Iury Gabriel</p>
+          <p><strong>Idade:</strong> 15 anos (2010)</p>
+          <p><strong>Cidade natal:</strong> Bom Conselho - PE</p>
+          <p><strong>Profissão:</strong> Jogador de Futebol</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sonhos -->
+    <section class="mb-8">
+      <h2 class="text-3xl font-semibold text-yellow-500 mb-4">Meus Sonhos</h2>
+      <div class="flex items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div class="flex-shrink-0">
+          <img class="rounded-full w-40 h-40 object-cover border-4 border-yellow-500" src="img/sonhos.jpg" alt="Iury Gabriel">
+        </div>
+        <div class="ml-6 w-2/3">
+          <ul class="list-disc ml-6 text-white">
+            <li>Defender a Seleção Brasileira</li>
+            <li>Ser um ícone do esporte e inspirar jovens</li>
+            <li>Montar uma academia para jovens talentos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clubes -->
+    <section class="mb-8">
+      <h2 class="text-3xl font-semibold text-yellow-500 mb-4">Clubes pelos quais passei</h2>
+      <div class="flex items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div class="flex-shrink-0">
+          <img class="rounded-full w-40 h-40 object-cover border-4 border-yellow-500" src="img/clubes.jpg" alt="Iury Gabriel">
+        </div>
+        <div class="ml-6 w-2/3">
+          <ul class="list-disc ml-6 text-white">
+            <li>Flamengo de Arcoverde - PE</li>
+            <li>Belo Jardim FC - PE</li>
+            <li>Clube atual: [Nome do clube]</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outras Informações -->
+    <section class="mb-8">
+      <h2 class="text-3xl font-semibold text-yellow-500 mb-4">Outras Informações</h2>
+      <div class="flex items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div class="flex-shrink-0">
+          <img class="rounded-full w-40 h-40 object-cover border-4 border-yellow-500" src="img/outras.jpg" alt="Iury Gabriel">
+        </div>
+        <div class="ml-6 w-2/3">
+          <p class="text-white">Sempre fui apaixonado pelo futebol desde pequeno, me dedicando para alcançar grandes conquistas. Com um espírito competitivo, sempre busquei superar meus limites, enfrentando desafios com determinação e foco. O futebol é mais do que um esporte para mim, é um estilo de vida.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-white py-6 text-center">
+    <p>&copy; 2025 Iury Gabriel. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
